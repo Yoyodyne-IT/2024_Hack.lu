@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "lookyloo-tutorial"
+version = "0.1.0"
+description = "A developer-oriented tutorial to understand what lookyloo is for"
+authors = ["Raphaël Vinot <raphael@lookyloo.eu>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+jupyterlab = "^4.2.5"
+pylookyloo = "^1.26.1"
+pymisp = {version = "^2.5.0", extras = ["email", "fileobjects", "url"]}
+pyphishtanklookup = "^1.4.0"
+pypandora = "^1.9.0"
+pylacus = "^1.11.1"
+lacuscore = "^1.11.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^8.3.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
